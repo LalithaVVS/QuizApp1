@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity73">
+
+    <TextView
+        android:id="@+id/textView75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Q1. Winnepeg is the capital of which Canadian province?"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup66"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button223"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Previous"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button224"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup66" />
+
+    <Button
+        android:id="@+id/button224"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick2"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button225"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button223"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup66" />
+
+    <Button
+        android:id="@+id/button225"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick3"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button224"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup66" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup66"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        app:layout_constraintBottom_toTopOf="@+id/button223"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView75">
+
+        <RadioButton
+            android:id="@+id/radioButton281"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="RadioButton" />
+
+        <RadioButton
+            android:id="@+id/radioButton282"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="RadioButton" />
+
+        <RadioButton
+            android:id="@+id/radioButton283"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="RadioButton" />
+
+        <RadioButton
+            android:id="@+id/radioButton284"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="RadioButton" />
+    </RadioGroup>
+
+</android.support.constraint.ConstraintLayout>

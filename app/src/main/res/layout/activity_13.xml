@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity13">
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Q1. What is the name of the famous statue by Edvard Eriksen, unveiled on the 23rd August, 1913?"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Previous"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button44"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup11" />
+
+    <Button
+        android:id="@+id/button44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick2"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button45"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button43"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup11" />
+
+    <Button
+        android:id="@+id/button45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick3"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button44"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup11" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        app:layout_constraintBottom_toTopOf="@+id/button45"
+        app:layout_constraintTop_toBottomOf="@+id/textView17"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.078"
+        tools:layout_editor_absoluteX="16dp">
+
+        <RadioButton
+            android:id="@+id/radioButton41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="The Little Mermaid" />
+
+        <RadioButton
+            android:id="@+id/radioButton42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="Statue of Liberty" />
+
+        <RadioButton
+            android:id="@+id/radioButton43"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="George Washington" />
+
+        <RadioButton
+            android:id="@+id/radioButton44"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="Great Sphinx" />
+    </RadioGroup>
+
+</android.support.constraint.ConstraintLayout>

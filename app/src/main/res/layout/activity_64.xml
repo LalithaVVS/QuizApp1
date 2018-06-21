@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity64">
+
+    <TextView
+        android:id="@+id/textView66"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Q2. In which city is the europian parliament based?"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup57"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button196"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick4"
+        android:text="Previous"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button197"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup57" />
+
+    <Button
+        android:id="@+id/button197"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick2"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button198"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button196"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup57" />
+
+    <Button
+        android:id="@+id/button198"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick3"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button197"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup57" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup57"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        app:layout_constraintBottom_toTopOf="@+id/button197"
+        app:layout_constraintTop_toBottomOf="@+id/textView66"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <RadioButton
+            android:id="@+id/radioButton245"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="Brussels" />
+
+        <RadioButton
+            android:id="@+id/radioButton246"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="Luxembourg" />
+
+        <RadioButton
+            android:id="@+id/radioButton247"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="Strasbourg" />
+
+        <RadioButton
+            android:id="@+id/radioButton248"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="Frankfurt" />
+    </RadioGroup>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose your category"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="36sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/button"
+        android:layout_width="@android:dimen/app_icon_size"
+        android:layout_height="@android:dimen/app_icon_size"
+        android:background="@drawable/art"
+        android:onClick="onClick1"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/button2"
+        android:layout_width="@android:dimen/app_icon_size"
+        android:layout_height="@android:dimen/app_icon_size"
+        android:background="@drawable/gk"
+        android:onClick="onClick2"
+        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/button3"
+        android:layout_width="@android:dimen/app_icon_size"
+        android:layout_height="@android:dimen/app_icon_size"
+        android:background="@drawable/geography"
+        android:onClick="onClick3"
+        app:layout_constraintBottom_toTopOf="@+id/button6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/button4"
+        android:layout_width="@android:dimen/app_icon_size"
+        android:layout_height="@android:dimen/app_icon_size"
+        android:background="@drawable/history"
+        android:onClick="onClick4"
+        app:layout_constraintBottom_toTopOf="@+id/button7"
+        app:layout_constraintEnd_toStartOf="@+id/button5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <ImageView
+        android:id="@+id/button5"
+        android:layout_width="@android:dimen/app_icon_size"
+        android:layout_height="@android:dimen/app_icon_size"
+        android:background="@drawable/music"
+        android:onClick="onClick5"
+        app:layout_constraintBottom_toTopOf="@+id/button8"
+        app:layout_constraintEnd_toStartOf="@+id/button6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button4"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <ImageView
+        android:id="@+id/button6"
+        android:layout_width="@android:dimen/app_icon_size"
+        android:layout_height="@android:dimen/app_icon_size"
+        android:background="@drawable/science"
+        android:onClick="onClick6"
+        app:layout_constraintBottom_toTopOf="@+id/button9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button5"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+    <ImageView
+        android:id="@+id/button7"
+        android:layout_width="@android:dimen/app_icon_size"
+        android:layout_height="@android:dimen/app_icon_size"
+        android:background="@drawable/sports"
+        android:onClick="onClick7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button8"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+    <ImageView
+        android:id="@+id/button8"
+        android:layout_width="@android:dimen/app_icon_size"
+        android:layout_height="@android:dimen/app_icon_size"
+        android:background="@drawable/tie"
+        android:onClick="onClick8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button9"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button7"
+        app:layout_constraintTop_toBottomOf="@+id/button5" />
+
+    <ImageView
+        android:id="@+id/button9"
+        android:layout_width="@android:dimen/app_icon_size"
+        android:layout_height="@android:dimen/app_icon_size"
+        android:background="@drawable/tv"
+        android:onClick="onClick9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button8"
+        app:layout_constraintTop_toBottomOf="@+id/button6" />
+
+</android.support.constraint.ConstraintLayout>

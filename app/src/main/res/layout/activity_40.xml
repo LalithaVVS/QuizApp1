@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity40">
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Q8. Affenpinscher, Keeshond and Leonberger are all types of what?"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup33"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button124"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick4"
+        android:text="Previous"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button125"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup33" />
+
+    <Button
+        android:id="@+id/button125"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick2"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button126"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button124"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup33" />
+
+    <Button
+        android:id="@+id/button126"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick3"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button125"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup33" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        app:layout_constraintBottom_toTopOf="@+id/button124"
+        app:layout_constraintTop_toBottomOf="@+id/textView44"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <RadioButton
+            android:id="@+id/radioButton149"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="Dogs" />
+
+        <RadioButton
+            android:id="@+id/radioButton150"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="Mangoes" />
+
+        <RadioButton
+            android:id="@+id/radioButton151"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="Forts" />
+
+        <RadioButton
+            android:id="@+id/radioButton152"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="Soils" />
+    </RadioGroup>
+
+</android.support.constraint.ConstraintLayout>

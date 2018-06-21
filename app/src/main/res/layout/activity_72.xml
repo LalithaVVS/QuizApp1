@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity72">
+
+    <TextView
+        android:id="@+id/textView74"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Q10. A scottish mountain must be at least how many feet high to be called a Munro?"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup65"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button220"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick4"
+        android:text="Previous"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button221"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup65" />
+
+    <Button
+        android:id="@+id/button221"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick2"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button222"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button220"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup65" />
+
+    <Button
+        android:id="@+id/button222"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick2"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button221"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup65" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup65"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        app:layout_constraintBottom_toTopOf="@+id/button222"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView74">
+
+        <RadioButton
+            android:id="@+id/radioButton277"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="3000" />
+
+        <RadioButton
+            android:id="@+id/radioButton278"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="4000" />
+
+        <RadioButton
+            android:id="@+id/radioButton279"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="3500" />
+
+        <RadioButton
+            android:id="@+id/radioButton280"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="4500" />
+    </RadioGroup>
+
+</android.support.constraint.ConstraintLayout>
